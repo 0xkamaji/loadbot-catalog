@@ -1,0 +1,5 @@
+version = 1
+
+[tools.rot-tools]
+type = "git"
+url = "https://github.com/0xkamaji/rot-tools.git"

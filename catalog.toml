@@ -4,6 +4,10 @@ version = 1
 type = "git"
 url = "https://github.com/0xkamaji/dotfiles.git"
 
+[tools.rot-infra]
+type = "git"
+url = "git@github.com:0xkamaji/rot-infra.git"
+
 [tools.rot-tools]
 type = "git"
 url = "https://github.com/0xkamaji/rot-tools.git"

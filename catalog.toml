@@ -1,5 +1,9 @@
 version = 1
 
+[tools.0xkamaji_dotfiles]
+type = "git"
+url = "https://github.com/0xkamaji/dotfiles.git"
+
 [tools.rot-tools]
 type = "git"
 url = "https://github.com/0xkamaji/rot-tools.git"

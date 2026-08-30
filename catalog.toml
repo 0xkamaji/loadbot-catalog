@@ -4,10 +4,35 @@ version = 1
 type = "git"
 url = "https://github.com/0xkamaji/dotfiles.git"
 
+[tools.0xkamaji_dotfiles.commands.install_dotfiles]
+path = "install_dotfiles.sh"
+description = "Install packages and link this repository's dotfiles"
+runner = "bash"
+
 [tools.rot-infra]
 type = "git"
 url = "git@github.com:0xkamaji/rot-infra.git"
 
+[tools.rot-infra.commands.adopt_matrix]
+path = "hosts/hobbit_hole_server/adopt_matrix.sh"
+description = "Adopt the Matrix Compose configuration and rotate its database credential"
+runner = "bash"
+
+[tools.rot-infra.commands.backup]
+path = "hosts/hobbit_hole_server/backup.sh"
+description = "Run and configure Matrix backups for hobbithole-server"
+runner = "bash"
+
+[tools.rot-infra.commands.setup]
+path = "hosts/hobbit_hole_server/setup.sh"
+description = "Inspect or repair hobbithole-server infrastructure"
+runner = "bash"
+
 [tools.rot-tools]
 type = "git"
 url = "https://github.com/0xkamaji/rot-tools.git"
+
+[tools.rot-tools.commands.debug-server]
+path = "re-toolkit/tools/binary-ninja/remote-debug/debug-server.sh"
+description = "Manage Binary Ninja remote debug servers"
+runner = "bash"

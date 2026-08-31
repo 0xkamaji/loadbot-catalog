@@ -36,3 +36,15 @@ url = "https://github.com/0xkamaji/rot-tools.git"
 path = "re-toolkit/tools/binary-ninja/remote-debug/debug-server.sh"
 description = "Manage Binary Ninja remote debug servers"
 runner = "bash"
+
+[tools.rot-tools.commands."count-classes-in-jars.ps1"]
+path = "re-toolkit/recipes/java_re/powershell/count-classes-in-jars.ps1"
+description = "Counts classes in jar files in a directory"
+runner = "powershell"
+
+[tools.rot-tools.commands."find-class-in-jars.ps1"]
+path = "re-toolkit/recipes/java_re/powershell/find-class-in-jars.ps1"
+description = "Locate file containing a specific class in a directory of jar files."
+runner = "powershell"
+
+

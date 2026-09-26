@@ -1,9 +1,5 @@
 version = 1
 
-[tools.radio-configs]
-type = "git"
-url = "git@github.com:0xkamaji/radio-configs.git"
-
 [tools.0xkamaji_dotfiles]
 type = "git"
 url = "https://github.com/0xkamaji/dotfiles.git"
@@ -12,6 +8,10 @@ url = "https://github.com/0xkamaji/dotfiles.git"
 path = "install_dotfiles.sh"
 description = "Install packages and link this repository's dotfiles"
 runner = "bash"
+
+[tools.radio-configs]
+type = "git"
+url = "git@github.com:0xkamaji/radio-configs.git"
 
 [tools.rot-infra]
 type = "git"
@@ -32,23 +32,25 @@ path = "hosts/hobbit_hole_server/setup.sh"
 description = "Inspect or repair hobbithole-server infrastructure"
 runner = "bash"
 
+[tools.rot-server]
+type = "git"
+url = "git@github.com:0xkamaji/rot-server.git"
+
 [tools.rot-tools]
 type = "git"
 url = "https://github.com/0xkamaji/rot-tools.git"
-
-[tools.rot-tools.commands.debug-server]
-path = "re-toolkit/tools/binary-ninja/remote-debug/debug-server.sh"
-description = "Manage Binary Ninja remote debug servers"
-runner = "bash"
 
 [tools.rot-tools.commands."count-classes-in-jars.ps1"]
 path = "re-toolkit/recipes/java_re/powershell/count-classes-in-jars.ps1"
 description = "Counts classes in jar files in a directory"
 runner = "powershell"
 
+[tools.rot-tools.commands.debug-server]
+path = "re-toolkit/tools/binary-ninja/remote-debug/debug-server.sh"
+description = "Manage Binary Ninja remote debug servers"
+runner = "bash"
+
 [tools.rot-tools.commands."find-class-in-jars.ps1"]
 path = "re-toolkit/recipes/java_re/powershell/find-class-in-jars.ps1"
 description = "Locate file containing a specific class in a directory of jar files."
 runner = "powershell"
-
-
